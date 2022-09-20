@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+  crossorigin="anonymous"
+  >
+  <link rel="stylesheet" href="/cadMedico/css/style.css">
+  
+  <title>Medicos Cadastrados</title>
+</head>
+<body class="bd">
+  <div class="container-fluid">
+    <div class="d-flex m-5 justify-content-around">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <form class="d-flex">
+           <a class="btn btn-success" type="submit" href="cadastro.html">Cadastrar Médicos</a>
+          </form>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <form class="d-flex">
+           <a class="btn btn-warning" type="submit" href="index.html">Home</a>
+          </form>
+        </div>
+      </nav>
+    </div>
+    <div class="col-sm-12">
+      <table class="table table-secondary table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">CRM</th>
+            <th scope="col">Especialidade</th>
+            <th scope="col">Telefone</th>
+            <th scope="col">Ações</th>
+          </tr>
+        </thead>
+        <tbody id="results"></tbody>
+      </table>
+    </div>
+  </div>
+  <script src="/cadMedico/js/read.js"></script>
+  <script src="/cadMedico/js/remove.js"></script>
+  <script src="/cadMedico/js/update.js"></script>
+</body>
+</html>

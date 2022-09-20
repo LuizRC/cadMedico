@@ -1,0 +1,27 @@
+Criar banco de dados
+CREATE DATABASE cadastromedico;
+
+Criar tabela no banco de dados
+CREATE TABLE medico(
+id int(11) AUTO_INCREMENT PRIMARY KEY,
+nome varchar(40) NOT NULL,
+crm varchar(8) NOT NULL,
+telefone varchar(11) NOT NULL,
+especialidade varchar(30) NOT NULL
+);
+
+Seleciona a tabela do banco de dados
+"SELECT * FROM medico;"
+
+Inseri dados na tabela do banco de dados
+"INSERT INTO medico(nome, crm, telefone, especialidade) VALUES('".$nome."', '".$crm."', '".$telefone."', '".$especialidade."')";
+
+Lista os dados da tabela
+"SELECT * FROM medico ORDER BY id ASC;"
+"SELECT * FROM medico ORDER BY id DESC;"
+
+Apaga os dado da tabela
+"DELETE FROM medico WHERE id='$id'";
+
+Atualiza os dados da tabela
+"UPDATE medico SET nome='$nome', crm='$crm', telefone='$telefone', especialidade='$especialidade' WHERE id='$id'";

@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+}
+.bd {
+  background: rgb(97, 179, 235);
+}
+.cad {
+  color: aliceblue;
+  font-size: bold;
+}
+
+.cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+}
+.letras{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+}
